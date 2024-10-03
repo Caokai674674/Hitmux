@@ -398,7 +398,7 @@ int main(){
 			cout<<"<cle>\nClear the screen.\n\n";
 			cout<<"<mkd> <path>\nMake a new directory.\n\n";
 			cout<<"<allcmd>\nList the usage of all commands.\n\n";
-			cout<<"<mkf> <path>\nMake a new empty file.";
+			cout<<"<mkf> <path>\nMake a new empty file.\n\n";
 			cout<<"<help> <command>\nView the usage of a command.\n\n";
 			cout<<"*************";
 		}
