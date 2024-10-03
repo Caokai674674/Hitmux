@@ -386,7 +386,7 @@ int main(){
 			else if(a[1]=="upg") cout<<"<upg>\n...\nUpdate the system.";
 			else if(a[1]=="cle") cout<<"<cle>\nClear the screen.";
 			else if(a[1]=="mkd") cout<<"<mkd> <path>\nMake a new directory.";
-            else uf(a[1]=="mkf") cout<<"<mkf> <path>\nMake a new empty file.";
+            		else if(a[1]=="mkf") cout<<"<mkf> <path>\nMake a new empty file.";
 			else if(a[1]=="allcmd") cout<<"<allcmd>\nList the usage of all commands.";
 			else cout<<"<help> <command>\nView the usage of a command.\n<>is required item,[]is Optional options and {}isExplanation of a certain item./n";
 		}
