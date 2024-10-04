@@ -15,7 +15,7 @@
 
 using namespace std;
 
-string Hit_PASSWD="597486",User_PASSWD="123456",USR;
+string Hit_PASSWD="654321",User_PASSWD="123456",USR;
 
 inline char getch() {
     struct termios oldt, newt;
