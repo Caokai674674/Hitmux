@@ -310,7 +310,7 @@ int main(){
 		else if(a[0]=="rm"){
 		    if(USR!="Hit"&&USR!="User") cout<<"Permission denied.";
 			else if(a[1]=="-s"&&a[2]!="\0"){
-				const char *temp_rm=a[1].c_str();
+				const char *temp_rm=a[2].c_str();
 				int re_rm=remove(temp_rm);
 				if(re_rm==0) cout<<"Succeed!";
 				else cout<<"Can't remove this file!";
