@@ -185,7 +185,7 @@ inline void p(){
 inline void start(){
 	for(int i=1;i<=100;i++) {
 		cout<<"loading..."<<i<<"%\n";
-		system("cls");
+		clscr();
 	}
 	cout<<"Please wait...\n";
 	loading(10);
