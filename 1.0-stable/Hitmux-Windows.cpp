@@ -329,7 +329,7 @@ int main(){
 			}
 			else if(a[1]=="\0") cout<<"No user entered!";
 			else if(a[2]=="\0") cout<<"No new password entered!";
-			else if(a[1]!="User"&&a[1]!="Hit") cout<<"There is no such user or the user cannot change the password！";
+			else if(a[1]!="User"&&a[1]!="Hit") cout<<"There is no such user or the user cannot change the password!";
 			else cout<<"Error!";
 			
 		}
@@ -371,7 +371,6 @@ int main(){
 			cout<<"<mkd> <path>\nMake a new directory.\n\n";
 			cout<<"<allcmd>\nList the usage of all commands.\n\n";
 			cout<<"<mkf> <path>\nMake a new empty file.\n\n";
-
 			cout<<"<help> <command>\nView the usage of a command.\n\n";
 			cout<<"*************";
 		}
