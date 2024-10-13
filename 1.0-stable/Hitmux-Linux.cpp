@@ -357,7 +357,7 @@ int main(){
 			else if(USR=="Visitor") cout<<"Permission denied.";
 			else if(a[1]=="\0") cout<<"No user entered!";
 			else if(a[2]=="\0") cout<<"No new password entered!";
-			else if(a[1]!="User"&&a[1]!="Hit") cout<<"There is no such user or the user cannot change the password！";
+			else if(a[1]!="User"&&a[1]!="Hit") cout<<"There is no such user or the user cannot change the password!";
 			else cout<<"Error!";
 			
 		}
