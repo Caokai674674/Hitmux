@@ -18,7 +18,7 @@
 #include "CLOG.h"
 
 using namespace std;
-const string  V_OF_H="1.2.0-bate",YEAR="2024";
+const string  V_OF_H="1.2.0-stable",YEAR="2024";
 string Hit_PASSWD="654321",User_PASSWD="123456",USR;
 
 inline void pwd(){
