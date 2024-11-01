@@ -18,7 +18,8 @@
 #include "CLOG.h"
 #include "X86.h"
 
-#include "GAME.h"//This header file include MINE-CLEARANCE.h and MINE_CLARANCE-2.1.3.h
+#include "GAME.h"#include "GAME.h"//This header file include MINE-CLEARANCE.h and MINE_CLARANCE-2.1.3.h
+
 
 using namespace std;
 const string  V_OF_H="1.2.2",YEAR="2024";
