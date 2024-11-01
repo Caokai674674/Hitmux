@@ -15,15 +15,19 @@ Hit 模式的默认密码为 654321，User 模式的默认密码为 123456。
 Compile and run:
 编译与运行：
 -----------
+
+It seems that you must use TDM-GCC 9.2.0 to compile.
+貌似必须使用TDM-GCC 9.2.0编译。
+
 * Command on Linux:
 * Linux 上的命令：
 ```bash
-g++ Hitmux-Linux.cpp -o Hitmux -O2
+g++ ***.cpp -o Hitmux -O2
 ./Hitmux
 ```
 * Command on Windows:
 * Windows上的命令：
 ```bash
-g++ Hitmux-Windows.cpp -o Hitmux.exe -O2
+g++ ***.cpp -o Hitmux.exe -O2
 Hitmux.exe
 ```
