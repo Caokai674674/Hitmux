@@ -206,7 +206,7 @@ int main(){
 		    else cout<<"Error!";
 		}
 		else if(a[0]=="sd"){
-			text_ui("You will lost all of the data!",1);
+			text_ui("Hitnux will be shut down!",1);
 			shutdown();
 			return 0;
 		}
