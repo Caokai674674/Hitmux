@@ -39,7 +39,7 @@ inline void clog_h(){
 	cout<<"*****************************************************\n";
 	
 	cout<<"Hitmux 2.0.0-very_unstable (C) 2024 CaoKai,All right reserved.\n";
-	cout<<"1.Can retain operating system data instead of losing all data every time it is shut down\n";
+	cout<<"1.Can retain operating system data instead of losing all data every time it is shut down.\n";
 	cout<<"2.Add header file \"SYSTEM.h\".\n";
 	cout<<"3.This version is very unstable, and sometimes it even fails to start properly!\n";
 	cout<<"*****************************************************\n";
