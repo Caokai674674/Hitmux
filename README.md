@@ -31,6 +31,4 @@ Hitmux.exe
 Forgot your password?
 忘记了密码？
 -----------
-* Download Password-reset.exe
-* 下载 Password-reset.exe
-[Password-reset.exe](https://github.com/Caokai674674/Hitmux/blob/main/Password-reset/Password-reset.exe)
+* Download 下载 [Password-reset.exe](https://github.com/Caokai674674/Hitmux/blob/main/Password-reset/Password-reset.exe)
