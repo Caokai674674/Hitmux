@@ -27,16 +27,15 @@ Hitmux 2.1.0-beta (C) 2024 CaoKai,All right reserved.
 Compile and run:
 编译与运行：
 -----------
-* Command on Linux:
-* Linux 上的命令：
-```bash
-g++ -o Hitmux ***.cpp -O2
-./Hitmux
-```
+Versions 2.1.0-beta and above need to install the EGE library. 2.1.0-beta及以上版本需要安装EGE库。
+Download 下载：https://xege.org/
+
 * Command on Windows:
 * Windows上的命令：
 ```bash
 g++ -o Hitmux.exe ***.cpp -O2
+//2.1.0-beta and above: 2.1.0-beta及以上版本：
+g++ -o Hitmux.exe ***.cpp -O2 -lgraphics -lgdi32 -lgdiplus
 Hitmux.exe
 ```
 
