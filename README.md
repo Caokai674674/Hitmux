@@ -32,6 +32,7 @@ Compile and run:
 Versions 2.1.0-beta and above need to install the EGE library. 2.1.0-beta及以上版本需要安装EGE库。
 
 Download 下载：https://xege.org/
+Or 或者：https://github.com/Caokai674674/Hitmux/tree/main/EGE24.04
 
 * Command on Windows:
 * Windows上的命令：
