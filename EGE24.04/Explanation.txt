@@ -1,2 +1,0 @@
-Zip package for ege 24.04.
-ege24.04的zip包。
