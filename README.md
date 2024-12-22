@@ -45,10 +45,10 @@ Instructions for use
 * Use the "allcmd" command in Hitmux to view the instructions.
 * 在Hitmux里使用“allcmd”命令来查看使用说明。
   
-Your donation is my biggest motivation to continue developing Hitmux! Please raise your hand and donate to open source software! Thanks!
+# Your donation is my biggest motivation to continue developing Hitmux! Please raise your hand and donate to open source software! Thanks!
 Long live open source software! ! !
 
-您的捐款是我继续开发Hitmux的最大动力！请高抬贵手给开源软件捐款！谢谢！
+# 您的捐款是我继续开发Hitmux的最大动力！请高抬贵手给开源软件捐款！谢谢！
 开源软件万岁！！！
 
 ![image](https://github.com/Caokai674674/Hitmux/blob/main/img/Thank-you!.png)
