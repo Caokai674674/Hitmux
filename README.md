@@ -26,8 +26,7 @@ Download 下载：https://xege.org/
 ```bash
 g++ -o Hitmux.exe ***.cpp -O2
 //2.1.0-beta and above: 2.1.0-beta及以上版本：
-g++ -o Hitmux.exe ***.cpp -O2 -lgraphics -lgdi32 -lgdiplus
-Hitmux.exe
+g++ -std=c++17 -o Hitmux.exe ***.cpp -O2 -lgraphics -lgdi32 -lgdiplus
 ```
 
 Forgot your password?
