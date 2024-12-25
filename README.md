@@ -21,8 +21,6 @@ Versions 2.1.0-beta and above need to install the EGE library. 2.1.0-beta及以�
 
 Download 下载：https://xege.org/
 
-Or 或者：https://github.com/Caokai674674/Hitmux/tree/main/EGE24.04
-
 * Command on Windows:
 * Windows上的命令：
 ```bash
