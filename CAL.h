@@ -9,7 +9,7 @@
 using namespace std;
 
 inline void calc_f(string a1,string a2,string a3){
-	cout<<"Powerful NB calculator 1.0-stable (C) 2024 CaoKai,All right reserved.\n";
+	cout<<"Powerful NB calculator 1.0-stable (C) 2024-2025 CaoKai,All right reserved.\n";
 	if((a2=="-sin"||a2=="-cos"||a2=="-tan")||(a1=="\0"||a2=="\0"||a3=="\0")){
 		cout<<"Error!";
 		return;
