@@ -77,9 +77,9 @@ public:
 };
 
 void game2_f(){
-	cout<<"Mine Clearance 2.1.3-bate (C) 2024 CaoKai,All right reserved\n";
-	cout<<"Mine Clearance 2.1.3-bate (C) 2024 CaoKai,All right reserved\n";
-	cout<<"Mine Clearance 2.1.3-bate (C) 2024 CaoKai,All right reserved\n";
+	cout<<"Mine Clearance 2.1.3-bate (C) 2024-2025 CaoKai,All right reserved\n";
+	cout<<"Mine Clearance 2.1.3-bate (C) 2024-2025 CaoKai,All right reserved\n";
+	cout<<"Mine Clearance 2.1.3-bate (C) 2024-2025 CaoKai,All right reserved\n";
     int r,c,p;
     cout<<"Enter rows, columns and mine percentage: ";
     cin>>r>>c>>p;
