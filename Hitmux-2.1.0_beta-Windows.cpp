@@ -22,7 +22,7 @@
 
 using namespace std;
 string system_data[8]={sha("NULL"),sha("NULL"),sha("NULL"),sha("NULL"),sha("NULL"),sha("NULL"),sha("NULL"),sha("NULL")},USR;
-const string V_OF_H="2.1.0-beta",YEAR="2024";
+const string V_OF_H="2.1.0-beta",YEAR="2024-2025";
 
 inline void pwd(){
 	char cwd[PATH_MAX];
