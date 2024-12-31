@@ -14,9 +14,9 @@ using namespace std;
 inline void game_f(){
 	while(1){
 		system("cls");
-		cout<<"Game Menu in Hitmux (C) 2024 CaoKai,All right reserved.\n";
-		cout<<"Game Menu in Hitmux (C) 2024 CaoKai,All right reserved.\n";
-		cout<<"Game Menu in Hitmux (C) 2024 CaoKai,All right reserved.\n";
+		cout<<"Game Menu in Hitmux (C) 2024-2025 CaoKai,All right reserved.\n";
+		cout<<"Game Menu in Hitmux (C) 2024-2025 CaoKai,All right reserved.\n";
+		cout<<"Game Menu in Hitmux (C) 2024-2025 CaoKai,All right reserved.\n";
 		cout<<"*******************************************************\n";
 		cout<<"Please select a game:\n";
 		cout<<"1. Mine Clearance 1.0.0-bate(Not recommended)\n";
