@@ -94,7 +94,7 @@ inline void text_long(string *output,int mode,int ti){
 
 inline string input_ui(string output){
 	system("cls");
-	COORD pos={14+output.length(),7};
+	COORD pos={static_cast<SHORT>(14+output.length()),7};
 	HANDLE hOut=GetStdHandle(STD_OUTPUT_HANDLE);
 	cout<<endl<<endl<<endl;
 	cout<<"          ################# Input #################"<<endl;
@@ -125,7 +125,7 @@ inline string input_ui(string output){
 
 inline string input_ui_passwd(string output){
 	system("cls");
-	COORD pos={14+output.length(),7};
+	COORD pos={static_cast<SHORT>(14+output.length()),7};
 	HANDLE hOut=GetStdHandle(STD_OUTPUT_HANDLE);
 	cout<<endl<<endl<<endl;
 	cout<<"          ################# Input #################"<<endl;
