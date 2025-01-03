@@ -25,7 +25,7 @@
                 "echo": true,
                 "reveal": "always",
                 "focus": false,
-                "panel": "shared", //这里shared表示共享，改成new之后每个进程创建新的端口
+                "panel": "shared",
                 "showReuseMessage": true,
                 "clear": false},
         }

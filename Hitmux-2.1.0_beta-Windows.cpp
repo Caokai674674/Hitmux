@@ -12,17 +12,17 @@
 #include <cmath>
 
 #include "UI.h"
-#include "CAL.h"
+#include "Software/CAL.h"
 #include "HELP.h"
-#include "X86.h"
+#include "Software/X86.h"
 #include "SYSTEM.h"
-#include "EGECLOCK.h"
+#include "Software/EGECLOCK.h"
 #include <conio.h>
-#include "GAME.h"//This header file include MINE-CLEARANCE.h and MINE_CLARANCE-2.1.3.h
+#include "Software/GAME.h"//This header file include MINE-CLEARANCE.h and MINE_CLARANCE-2.1.3.h
 
 using namespace std;
 string system_data[8]={sha("NULL"),sha("NULL"),sha("NULL"),sha("NULL"),sha("NULL"),sha("NULL"),sha("NULL"),sha("NULL")},USR;
-const string V_OF_H="2.1.0-beta",YEAR="2024-2025";
+const string V_OF_H="2.1.1",YEAR="2024-2025";
 
 inline void pwd(){
 	char cwd[PATH_MAX];
@@ -36,6 +36,15 @@ inline bool cd_path(const char* path) {
     }
     else return 0;
 }
+/*
+C++  Chrome Dino in terminal:
+要求：
+1. 分辨率要合适
+2. 障碍物宽度和高度要不一样
+3. 速度要有改变
+4. 抛物线要合适
+5. 刷新率要合适
+*/
 
 inline void p(){
 	cout<<"\n"<<USR<<" ";
