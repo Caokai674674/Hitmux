@@ -2,9 +2,7 @@
 
 ### v3.0.0正在重写全部代码 v3.0.0 is rewriting all the code
 ### Hitmux-v3.0.0将支持安装.bhit格式第三方软件！！！ Hitmux-v3.0.0 will support the installation of third-party software in .bhit format!!!
-## 查看最新版本 View the latest version：[Hitmux-v3.0.0-beta](https://github.com/Caokai674674/Hitmux/tree/3.0.0-beta)
----
----
+
 ---
 
 Caokai-Hitmux
