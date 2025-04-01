@@ -1,11 +1,10 @@
-# 现在正在开发v3.x版本，已经停止对v2.x版本的支持和维护。请立即停止对v2.x版本的开发！ We are currently developing version v3.x, and have stopped supporting and maintaining version v2.x. Please stop developing version v2.x immediately!
-
 ### v3.0.0正在重写全部代码 v3.0.0 is rewriting all the code
+### 这是 3.0.0-alpha，仅供开发者测试。 This is 3.0.0-alpha, for developers only.
 ### Hitmux-v3.0.0将支持安装.bhit格式第三方软件！！！ Hitmux-v3.0.0 will support the installation of third-party software in .bhit format!!!
 
 ---
 
-Caokai-Hitmux
+Caokai-Hitmux 3.0.0-alpha
 =============
 * Hitmux is a command-line software that I developed during my free time. 
 It currently has versions for both Linux and Windows.

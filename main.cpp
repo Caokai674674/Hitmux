@@ -15,10 +15,11 @@
 
 #include "const.cpp"
 #include "system/init.cpp"
-#include "user/login.cpp"
+#include "user/manage.cpp"
 #include "system/time.cpp"
 #include "system/fs.cpp"
 #include "system/sw.cpp"
+#include "system/fs2.cpp"
 
 using namespace std;
 
@@ -110,15 +111,12 @@ int main() {
     }
 
     load_all_plugins("plugins");
-    cout<<"enter any key to continue."<<endl;
-    getchar();
     string input;
-//    cout << prompt;
 
     while (true) {
         getline(cin, input);
         if (input.empty()) {
-            cout << prompt;
+            cout << prompt1 << hitmux_pwd() << prompt2;
             continue;
         }
 
@@ -131,16 +129,53 @@ int main() {
         while (ss >> arg) {
             params.push_back(arg);
         }
-
-        if (command == "echo") {
+        if (command == "exit") {
+            return 0;
+        }
+        else if (command == "echo") {
             if (!params.empty()) {
                 cout << params[0] << endl;
             }
-        } else if (command == "help") {
+        } 
+        else if (command == "help") {
             showHelp();
-        } else if (command == "adduser") {
-            hitmux_add();
-        } else if (command == "cd") {
+        }
+        else if (command == "adduser") {
+            if (params.size() > 1) cout << "Too many arguments." << endl;
+            else hitmux_adduser(params[0]);
+        } 
+        else if (command == "deluser") {
+            if (params.size() > 1) cout << "Too many arguments." << endl;
+            else hitmux_deluser(params[0]);
+        }
+        else if (command == "pwd") {
+            cout << hitmux_pwd() << endl;
+        }
+        else if (command == "ls") {
+            hitmux_ls(params);
+        }
+        else if (command == "cp") {
+            hitmux_cp(params);
+        }
+        else if (command == "mv") {
+            hitmux_mv(params);
+        }
+        else if (command == "rm") {
+            hitmux_rm(params);
+        }
+        else if (command == "cat") {
+            hitmux_cat(params);
+        }
+        else if (command == "mkdir") {
+            hitmux_mkdir(params);
+        }
+        else if (command == "time") {
+            cout << showtime() << endl;
+        }
+        else if (command == "touch") {
+            hitmux_touch(params);
+        }
+        else if (command == "cd") {
             if (params.empty()) {
                 cout << "cd: missing operand" << endl;
             } else if (params.size() == 1) {
@@ -150,12 +185,14 @@ int main() {
             } else {
                 cout << "cd: Too many arguments." << endl;
             }
-        } else if (global_commands.count(command)) {
+        }
+        else if (global_commands.count(command)) {
             global_commands[command](params);
-        } else {
+        }
+        else {
             cout << command << ": command not found" << endl;
         }
-        cout << prompt;
+        cout << prompt1 << hitmux_pwd() << prompt2;
     }
 
     for (void* handle : plugin_handles) {

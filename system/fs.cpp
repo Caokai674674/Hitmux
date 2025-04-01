@@ -6,6 +6,13 @@
 #include <filesystem>
 #include <stdexcept>
 #include <string>
+#ifdef _WIN32
+#include <windows.h>
+#else
+#include <unistd.h>
+#include <limits.h>
+#endif
+
 #include "time.cpp"
 #include "../const.cpp"
 
@@ -14,7 +21,7 @@ namespace fs = std::filesystem;
 
 void log(string message,int level);
 
-int hitmuix_mkdir(string fspath,int mode) {
+int hitmuix_basic_mkdir(string fspath,int mode) {
     fs::path folderPath = fspath.c_str();
 
     try {
@@ -64,7 +71,7 @@ void log(string message,int level) {
         level_str="Error";
     }
     if(!hitmux_is_dir(log_dir)){
-        int temp = hitmuix_mkdir(log_dir,-1);
+        int temp = hitmuix_basic_mkdir(log_dir,-1);
         if(temp!=0) {
             cout << "Failed to create log directory." << endl;
             return;
@@ -74,6 +81,32 @@ void log(string message,int level) {
     logFile.open(log_file.c_str(), ios::app);
     logFile << showtime() << " [" << level_str << "] " << message << endl;
     logFile.close();
+}
+
+
+
+std::string hitmux_pwd() {
+    std::string path;
+
+#ifdef _WIN32
+    DWORD size = GetCurrentDirectory(0, nullptr);
+    if (size == 0) {
+        return "";
+    }
+    std::vector<char> buffer(size);
+    if (GetCurrentDirectory(size, buffer.data()) == 0) {
+        return "";
+    }
+    path = std::string(buffer.data(), size - 1);
+#else
+    char buffer[PATH_MAX];
+    if (getcwd(buffer, sizeof(buffer)) == nullptr) {
+        return "";
+    }
+    path = buffer;
+#endif
+
+    return path;
 }
 
 #endif

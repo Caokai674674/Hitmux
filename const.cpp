@@ -4,7 +4,7 @@
 #include <string>
 using namespace std;
 const int MAX_PARAMS_INITIAL = 10;
-const string Hitmux_Version="3.0.0-beta";
+const string Hitmux_Version="3.0.0-alpha";
 #ifdef _WIN32
     const string init_file="C:\\Users\\Public\\Hitmux\\init.txt";
     const string init_dir="C:\\Users\\Public\\Hitmux";
@@ -25,6 +25,7 @@ const string Hitmux_Version="3.0.0-beta";
     const string config_file="/etc/hitmux/config.txt";
 #endif
 
-const string prompt="Hitmux >> ";
+const string prompt2=" > ";
+const string prompt1="Hitmux ";
 
 #endif

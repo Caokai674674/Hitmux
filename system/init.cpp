@@ -10,6 +10,7 @@
 #include "safe/sha256.cpp"
 #include "../const.cpp"
 #include "fs.cpp"
+#include "../user/passwd.cpp"
 
 using namespace std;
 
@@ -35,7 +36,7 @@ void system_init(){
         return;
     }
     else{
-        hitmuix_mkdir(init_dir,0);
+        hitmuix_basic_mkdir(init_dir,0);
         ofstream clean(init_file.c_str());  
         clean.close();
         printf("installing Hitmux system...\n");
@@ -58,7 +59,7 @@ void system_init(){
         printf("Password:");
         while (1){
             flag1 = 1;
-            cin >> password;
+            password = hitmux_input_passwd();
             for(int i=0;i<password.length();i++){
                 if(password[i] == ':'){
                     printf("Invalid password\nPlease input your password again:\n");
@@ -69,7 +70,6 @@ void system_init(){
             if(flag1 == 1) break;
         }
         ofstream install_system(init_file.c_str());
-        // ofstream install_system("test.txt");
         install_system << username <<":"<< sha256(password) << "\n";
         install_system.close();
         printf("Hitmux system installed successfully!\n");
