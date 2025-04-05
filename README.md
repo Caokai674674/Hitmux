@@ -2,6 +2,7 @@
 ### 这是 3.0.0-alpha，仅供开发者测试。 This is 3.0.0-alpha, for developers only.
 ### Hitmux-v3.0.0将支持安装.bhit格式第三方软件！！！ Hitmux-v3.0.0 will support the installation of third-party software in .bhit format!!!
 
+## [Official Website: 官网：](https://hitmux.top)
 ---
 
 Caokai-Hitmux 3.0.0-alpha
