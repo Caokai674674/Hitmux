@@ -25,7 +25,7 @@ const string Hitmux_Version="3.0.0-beta";
                                             //Very important! if you change this, you may can't run the sw of Hitmux!
 
     const string log_file="/var/log/hitmux/log.txt";
-    const string log_file="/var/log/hitmux";
+    const string log_dir="/var/log/hitmux";
 
     const string config_file="/etc/hitmux/config.txt";
 #endif
