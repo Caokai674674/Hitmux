@@ -2,7 +2,7 @@
 ### 3.0.0-beta :添加Hitsw-1.0标准，供第三方软件开发者使用。Added Hitsw-1.0 standard for use by third-party software developers.
 
 
-## [Official Website: 官网：](https://hitmux.top) https://hitmux.top
+## [Official Website 官网](https://hitmux.top)
 
 
 
