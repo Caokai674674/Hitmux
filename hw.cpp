@@ -12,7 +12,7 @@ void f1() {
 extern "C" {
     FunctionMap* register_functions() {
         FunctionMap* funcs = new FunctionMap();
-        (*funcs)["hello"] = f1;//f1 is function name and hello is the command name.
+        (*funcs)["helloword"] = f1;
         return funcs;
     }
 }

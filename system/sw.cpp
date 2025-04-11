@@ -1,66 +1,83 @@
 #ifndef SW_CPP
 #define SW_CPP
 
-#include <string>
 #include <cstdlib>
-#include <vector>
 #include <string>
+#include <iostream>
+#include <vector>
+#include "evn.cpp"
 
+using namespace std;
+
+bool hitmux_install_sw(vector<string> str) {
+    if (str.size() == 0) {
+        cout << "No input file.\n";
+        return false;
+    }
+    else if (str.size() > 1) {
+        cout << "Too many input files.\n";
+        return false;
+    }
+    else {
+        string cmd;
 #ifdef _WIN32
-    #include <windows.h>
+        string dest = hitmux_get_evn(1) + "\\lib" + str[0] + ".dll";
+        cmd = "mkdir " + hitmux_get_evn(1) + " " + hitmux_get_evn(2) + " " + hitmux_get_evn(3) + " " + hitmux_get_evn(4) + " && copy lib" + str[0] + ".dll " + dest;
 #else
-    #include <dirent.h>
+        string dest = hitmux_get_evn(1) + "/lib" + str[0] + ".so";
+        cmd = "mkdir -p " + hitmux_get_evn(1) + " " + hitmux_get_evn(2) + " " + hitmux_get_evn(3) + " " + hitmux_get_evn(4) + " && cp lib" + str[0] + ".so " + dest;
 #endif
-
-std::string get_sw_folder() {
-        std::string home_dir;
-    #ifdef _WIN32
-        char* user_profile = std::getenv("USERPROFILE");
-        if (user_profile != nullptr) {
-            home_dir = user_profile;
-        } else {
-            home_dir = "";
+        cout<<hitmux_get_evn(1)<<endl<<cmd<<endl;
+        if (system(cmd.c_str()) == 0) {
+            return true;
         }
-        return home_dir + "\\hitsw\\";
-    #else
-        char* home = std::getenv("HOME");
-        if (home != nullptr) {
-            home_dir = home;
-        } else {
-            home_dir = "";
+        else {
+            cout << "Installation failed.\n";
+            return false;
         }
-        return home_dir + "/hitsw/";
-    #endif
+    }
 }
 
-std::vector<std::string> list_sw(const std::string& folder) {
-    std::vector<std::string> files;
+bool hitmux_uninstall_sw(vector<string> str) {
+    cout << "Not implemented yet.\n";
+    return false;
+}
 
-    #ifdef _WIN32
-        WIN32_FIND_DATA find_data;
-        HANDLE hFind = FindFirstFile((folder + "\\*").c_str(), &find_data);
-        if (hFind != INVALID_HANDLE_VALUE) {
-            do {
-                if (!(find_data.dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY)) {
-                    files.push_back(folder + "\\" + find_data.cFileName);
-                }
-            } while (FindNextFile(hFind, &find_data));
-            FindClose(hFind);
+bool hitmux_build_sw(vector<string> str) {
+    string cmd;
+#ifdef _WIN32
+    if (str.size() == 0){
+        cout <<"No input file.\n";
+        return false;
+    }
+    else if (str.size() < 2) {
+        cmd = "g++ -shared -fPIC -O2 -o lib" + str[0] + ".dll " + str[0] + ".cpp";
+    }
+    else {
+        cmd = "g++ -o lib" + str[0] + ".dll " + str[0] + ".cpp";
+        for (int i = 1; i < str.size(); i++) {
+            cmd += " " + str[i];
         }
-    #else
-        DIR* dir = opendir(folder.c_str());
-        if (dir != nullptr) {
-            struct dirent* entry;
-            while ((entry = readdir(dir)) != nullptr) {
-                if (entry->d_type == DT_REG) {
-                    files.push_back(folder + "/" + entry->d_name);
-                }
-            }
-            closedir(dir);
+    }
+    system(cmd.c_str());
+    return true;
+#else
+    if (str.size() == 0){
+        cout <<"No input file.\n";
+        return false;
+    }
+    else if (str.size() < 2) {
+        cmd = "g++ -shared -fPIC -O2 -o lib" + str[0] + ".so " + str[0] + ".cpp";
+    }
+    else {
+        cmd = "g++ -o lib" + str[0] + ".so " + str[0] + ".cpp";
+        for (int i = 1; i < str.size(); i++) {
+            cmd += " " + str[i];
         }
-    #endif
-
-        return files;
+    }
+    system(cmd.c_str());
+    return true;
+#endif
 }
 
 #endif
