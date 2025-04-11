@@ -1,6 +1,6 @@
 # Hitsw-1.0-Standard
 
-[English](https://github.com/CaoKai674/Hitmux/Hitsw/hitsw-1.0-standard-en.md)
+[English](https://github.com/Caokai674674/Hitmux/blob/main/Hitsw/hitsw-1.0-standard-en.md)
 
 自从 Hitmux-3.0.0-beta 版本开始，Hitmux 支持了第三方插件（以下简称 sw ）。
 

@@ -1,10 +1,12 @@
-### 这是 3.0.0-beta，仅供开发者测试或者个人使用。 This is 3.0.0-beta, for developers or personal use.
-### 3.0.0-beta :添加Hitsw-1.0标准，供第三方软件开发者使用。Added Hitsw-1.0 standard for use by third-party software developers.
+#### 这是 3.0.0-beta，仅供开发者测试或者个人使用。 This is 3.0.0-beta, for developers or personal use.
+#### 3.0.0-beta :添加Hitsw-1.0标准，供第三方软件开发者使用。Added Hitsw-1.0 standard for use by third-party software developers.
 
 
-## [Official Website 官网](https://hitmux.top)
+# [Official Website 官网 https://hitmux.top](https://hitmux.top)
 
 
+主要更新内容：Major updates:
+### [Hitsw-1.0 标准 Hitsw-1.0 Standard](https://github.com/Caokai674674/Hitmux/blob/main/Hitsw/hitsw-1.0-standard-zh.md)
 
 Caokai-Hitmux 3.0.0-beta
 ====================

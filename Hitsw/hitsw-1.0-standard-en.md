@@ -1,8 +1,7 @@
 # Hitsw-1.0-Standard
 
-[简体中文](https://github.com/CaoKai674/Hitmux/Hitsw/hitsw-1.0-standard-zh.md)
+[简体中文](https://github.com/Caokai674674/Hitmux/blob/main/Hitsw/hitsw-1.0-standard-zh.md)
 
-自Hitmux-3.0.0-beta起，Hitmux支持第三方插件（以下简称sw）。
 Since Hitmux-3.0.0-beta, Hitmux supports third-party plugins (referred to as sw hereafter).
 
 This is a development standard for developers. Only sw that follows this standard can be used in Hitmux.
